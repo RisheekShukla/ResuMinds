@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMinds - Upload Resume</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ResuMinds</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="resume">Upload your resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMinds - Upload Resume</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #00FF7F;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            background-color: #333333;
+            border: 1px solid #00FF7F;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        input[type="file"]::-webkit-file-upload-button {
+            background: #00FF7F;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00FF7F;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00cc66;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #f1f1f1;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #888888;
+            text-align: center;
+        }
+
+        footer a {
+            color: #00FF7F;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #00cc66;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to ResuMinds</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="resume">Upload your resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ResuMinds. All Rights Reserved.</p>
+        <p>Built by <a href="https://github.com/RisheekShukla" target="_blank">tambit_14</a></p>
+    </footer>
+</body>
+
+</html>
+

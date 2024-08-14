@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="bg-gray-800 p-4 shadow-md fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">ResuMinds</h1>
+            <nav>
+                <a href="/" class="mr-4 hover:text-blue-400">Home</a>
+                <a href="/about" class="hover:text-blue-400">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto pt-16">
+        <%= body %>
+    </main>
+
+    <footer class="bg-gray-800 p-4 mt-8 text-center">
+        <p>&copy; 2024 ResuMinds. All rights reserved.</p>
+    </footer>
+</body>
+</html>

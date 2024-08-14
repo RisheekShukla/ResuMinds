@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Interview Questions</h1>
+    <ul>
+        <% questions.forEach(function(question) { %>
+            <li><%= question %></li>
+        <% }); %>
+    </ul>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions - ResuMinds</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #00FF7F;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #333333;
+            border: 1px solid #00FF7F;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #444444;
+            transform: translateX(5px);
+        }
+
+        .regenerate-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #00FF7F;
+            color: #1e1e1e;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .regenerate-button:hover {
+            background-color: #00cc66;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's begin your Interview !</h1>
+        <!-- <button class="regenerate-button" onclick="window.location.reload();">Regenerate</button> -->
+        <form class="regenerate-form" action="/regenerate" method="POST">
+            <button class="regenerate-button" type="submit">Regenerate</button>
+        </form>
+        <ul>
+            <% questions.forEach(function(question) { %>
+                <li><%= question %></li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
