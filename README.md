@@ -78,3 +78,4 @@ ResuMinds is open for collaboration! Whether you're interested in contributing t
 
 - [@tambit_14](https://www.github.com/RisheekShukla)
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=risheekshukla&label=Project%20views&color=0e75b6&style=flat" alt="risheekshukla" /> </p>
